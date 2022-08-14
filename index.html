@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://davidguia.me/bootstrap/css/bootstrap.min.css"
+    <title> JEU DU PLUS RAPIDE</title>
+    <style>
+        input {
+          font-size: 16 px;
+        }
+        input:focus {
+          font-size: 16px;
+        }
+        button {
+    touch-action: manipulation;
+}
+      </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-primary">Cliquez sur le bouton autant de fois que vous le pouvez avant la fin du temps impartis</h2>
+        <h2 class="texte-primary">Vous avez <span id="timer">10</span> secondes pour cliquer</h2>
+        <hr class="hr-dark"/>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary" id="btn1" onclick="incrementCounter()">Cliquez-moi</button>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="text-primary">
+                    Vous avez cliqué <span id="clicks">0</span> fois
+                </h2>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
